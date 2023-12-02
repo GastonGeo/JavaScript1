@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport Recommendation</title>
+</head>
+<body>
+  <script>
+    const metros = parseInt(prompt("Ingrese cantidad de metros a recorrer:", " "));
+    
+    if (metros <= 1000) {
+      console.log("El medio de transporte recomendado para esa distancia es a Pie");
+      document.write("El medio de transporte recomendado para esa distancia es a Pie");
+    } 
+    else if (metros > 1000 && metros <= 10000) {
+      console.log("El medio de transporte recomendado para esa distancia es Bicicleta");
+      document.write("El medio de transporte recomendado para esa distancia es  Bicicleta");
+    }
+    else if (metros > 10000 && metros >= 30000) {
+      console.log("El medio de transporte recomendado para esa distancia es Colectivo");
+      document.write("El medio de transporte recomendado para esa distancia es Colectivo");
+    }
+    else if (metros > 30000 && metros >= 100000) {
+      console.log("El medio de transporte recomendado para esa distancia es Auto");
+      document.write("El medio de transporte recomendado para esa distancia es Auto");
+    }
+    else if (metros > 100000) {
+      console.log("El medio de transporte recomendado para esa distancia es Avión");
+      document.write("El medio de transporte recomendado para esa distancia es a Avión");
+    }
+
+    else {
+      console.log("Perdón, no puedo procesar eso");
+      document.write("Perdón, no puedo procesar eso");
+    }
+  </script>
+
+</body>
+</html>
